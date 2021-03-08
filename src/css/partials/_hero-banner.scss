@@ -1,0 +1,16 @@
+.heroBanner {
+    position: relative;
+    height: calc(100vh - 46px);
+    overflow: hidden;
+}
+
+
+.heroBanner__bg {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
