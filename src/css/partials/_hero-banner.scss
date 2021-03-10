@@ -1,11 +1,14 @@
-.heroBanner {
+.heroBanner__container {
     position: relative;
     height: calc(100vh - 46px);
     overflow: hidden;
+    @media only screen and (min-width: 768px) {
+        height: 60vh;
+    }
 }
 
 
-.heroBanner__bg {
+.heroBanner__container--bg {
     position: absolute;
     content: '';
     top: 0;
