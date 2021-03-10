@@ -2,12 +2,11 @@
     padding: 6rem 0;
 }
 
-.quote__container {
-    position: relative;
-    background-color: rgba(150,170,168,255);
 
-    // background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+.quote__container {
     height: 400px;
+    background-image: url(../asset/pattern.png);
+    background-size: cover;
 }
 
 
@@ -19,8 +18,8 @@
     z-index: 1;
     margin: 0 auto;
     align-self: center;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    // border-top: solid 1px;
+    // border-bottom: solid 1px;
 
     height: 100%;
     display: flex;
