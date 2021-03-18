@@ -16,7 +16,10 @@ import '../css/style.sass';
 //////////////////////////
 
 // Library name
-// import example from "example";
+import * as THREE from 'three';
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+
 
 
 
@@ -24,7 +27,6 @@ import '../css/style.sass';
 // CLASS BLOCKS
 //////////////////////////
 
-// Example
 class Header {
   constructor() {
     this.header = document.querySelector('#menu-toggler');
@@ -43,6 +45,9 @@ class Header {
   }
 }
 
+
+
+
 ////////////////////
 // Run apps
 ////////////////////
@@ -53,18 +58,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-////////////////////
-// Keyboard focus
-////////////////////
-
-function keyboardFocus (e) {
-  if (e.keyCode === 9) { // Tab key
-    document.documentElement.classList.add('keyboard-focus');
-  }
-
-  document.removeEventListener('keydown', keyboardFocus, false);
-}
-
-document.documentElement.classList.remove('no-js');
-document.addEventListener('keydown', keyboardFocus, false);

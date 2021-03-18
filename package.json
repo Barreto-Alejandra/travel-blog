@@ -34,6 +34,8 @@
     "slick-carousel": "^1.8.1",
     "smooth-scroll": "^16.1.2",
     "swiper": "^5.3.6",
+    "three": "^0.126.1",
+    "three-orbitcontrols-ts": "^0.1.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"

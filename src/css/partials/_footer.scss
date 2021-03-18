@@ -1,0 +1,24 @@
+.footer {
+    .container {
+        border-top: 1px solid $black-2;
+    }
+}
+
+
+.footer__text {
+    text-align: center;
+    color: $black-2;
+    & p {
+        letter-spacing: 0.60px;
+        font-size: 14px;
+        & a {
+            color: $black-2;
+            font-weight: 400;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+            &:hover, &:focus {
+                color: #5f74d4
+            }
+        }
+    }
+}
