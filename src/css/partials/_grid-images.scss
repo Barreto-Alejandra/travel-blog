@@ -1,0 +1,13 @@
+.gridImages {
+    padding: 3rem 0;
+    & .heading {
+        text-align: center;
+        color: $black-2;
+    }
+    @media only screen and (min-width: 1200px) {
+        & .heading {
+            font-size: 40px;
+            padding-bottom: 3rem;
+        }
+    }
+}
