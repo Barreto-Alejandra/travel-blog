@@ -1,0 +1,91 @@
+.textBlock {
+    padding: 5rem 0;
+    .container {
+        .row {
+            flex-direction: column-reverse;
+            .heading {
+                margin: 0;
+                text-align: center;
+                font-size: 35px;
+                font-weight: 600;
+                color: $heading-color;
+            }
+            & .text {
+                margin: 0 auto;
+                padding-top: 1.5rem;
+                text-align: center;
+                max-width: 90%;
+                & p {
+                    margin: 0;
+                    font-family: $font-main;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    font-weight: 300;
+                    color: $black-2;
+                    padding-bottom: 1rem;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 768px) {
+
+    }
+    @media only screen and (min-width: 992px) {
+        padding: 7rem 0;
+        .container {
+            .row {
+                flex-direction: row;
+                & .text {
+                    max-width: 100%;
+                    & p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//figure
+.textBlock__figure {
+    margin-top: 3rem;
+}
+
+
+.textBlock__figure--img {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+    & img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+
+.textBlock__figure--topGif {
+    position: absolute;
+    max-width: 65px;
+    right: 90px;
+    top: 20px;
+    transform: rotate(-50deg);
+    & img {
+        width: 100%;
+    }
+}
+
+.textBlock__figure--bottomGif {
+    position: absolute;
+    max-width: 65px;
+    left: 22px;
+    bottom: 130px;
+    transform: rotate(-95deg);
+    & img {
+        width: 100%;
+    }
+}
