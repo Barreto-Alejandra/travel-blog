@@ -39,7 +39,6 @@
             .row {
                 flex-direction: row;
                 & .text {
-                    max-width: 100%;
                     & p {
                         font-size: 16px;
                     }
@@ -53,6 +52,9 @@
 //figure
 .textBlock__figure {
     margin-top: 3rem;
+    @media only screen and (min-width: 992px) {
+        margin-top: 0;
+    }
 }
 
 
@@ -64,6 +66,9 @@
         width: 100%;
         display: block;
         object-fit: cover;
+    }
+    @media only screen and (min-width: 992px) {
+        max-width: 500px;
     }
 }
 
@@ -77,6 +82,9 @@
     & img {
         width: 100%;
     }
+    @media only screen and (min-width: 992px) {
+
+    }
 }
 
 .textBlock__figure--bottomGif {
@@ -87,5 +95,8 @@
     transform: rotate(-95deg);
     & img {
         width: 100%;
+    }
+    @media only screen and (min-width: 992px)  {
+
     }
 }
