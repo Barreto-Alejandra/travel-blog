@@ -51,7 +51,9 @@
 
 //figure
 .textBlock__figure {
-    margin-top: 3rem;
+    position: relative;
+    margin-top: 3rem auto 0;
+    max-width: 380px;
     @media only screen and (min-width: 992px) {
         margin-top: 0;
     }
@@ -62,6 +64,7 @@
     position: relative;
     max-width: 380px;
     margin: 0 auto;
+    z-index: 5;
     & img {
         width: 100%;
         display: block;
@@ -75,10 +78,10 @@
 
 .textBlock__figure--topGif {
     position: absolute;
-    max-width: 65px;
-    right: 90px;
-    top: 20px;
-    transform: rotate(-50deg);
+    max-width: 85px;
+    right: 65px;
+    top: 25px;
+    transform: rotate(20deg);
     & img {
         width: 100%;
     }
@@ -89,10 +92,10 @@
 
 .textBlock__figure--bottomGif {
     position: absolute;
-    max-width: 65px;
-    left: 22px;
-    bottom: 130px;
-    transform: rotate(-95deg);
+    max-width: 80px;
+    left: 88px;
+    bottom: -26px;
+    transform: rotate(-135deg);
     & img {
         width: 100%;
     }
