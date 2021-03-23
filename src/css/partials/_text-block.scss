@@ -52,10 +52,15 @@
 //figure
 .textBlock__figure {
     position: relative;
-    margin-top: 3rem auto 0;
+    margin: 3rem auto 0;
     max-width: 380px;
     @media only screen and (min-width: 992px) {
         margin-top: 0;
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -72,6 +77,10 @@
     }
     @media only screen and (min-width: 992px) {
         max-width: 500px;
+        width: 100%;
+    }
+    @media only screen and (min-width: 1200px) {
+        max-width: 600px;
     }
 }
 
@@ -86,9 +95,16 @@
         width: 100%;
     }
     @media only screen and (min-width: 992px) {
-
+        max-width: 125px;
+        right: 85px;
+        top: 165px;
+    }
+    @media only screen and (min-width: 1200px) {
+        right: 123px;
+        top: 50px;
     }
 }
+
 
 .textBlock__figure--bottomGif {
     position: absolute;
@@ -100,6 +116,12 @@
         width: 100%;
     }
     @media only screen and (min-width: 992px)  {
-
+        max-width: 125px;
+        left: 95px;
+        bottom: 105px;
+    }
+    @media only screen and (min-width: 1200px) {
+        left: 140px;
+        bottom: -45px;
     }
 }
