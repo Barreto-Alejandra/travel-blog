@@ -16,9 +16,7 @@ import '../css/style.sass';
 //////////////////////////
 
 // Library name
-import * as THREE from 'three';
 
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 
 
@@ -46,13 +44,22 @@ class Header {
 }
 
 
-
+class Parallax {
+  constructor () {
+    this.parallaxEffect = document.querySelector('#js-parallax');
+    this.start();
+  }
+  start() {
+    
+  }
+}
 
 ////////////////////
 // Run apps
 ////////////////////
 document.addEventListener('DOMContentLoaded', function () {
   var togglerHeader = new Header;
+  var parallax = new Parallax;
 });
 
 
