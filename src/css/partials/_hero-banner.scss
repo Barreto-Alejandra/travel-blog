@@ -15,6 +15,27 @@
 }
 
 
+.heroBanner__container--content {
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    & .text {
+        background: $white;
+        opacity: 0.7;
+        margin: 0;
+        padding: 1rem 0;
+        text-align: center;
+        & p {
+            margin: 0;
+            color: $heading-color;
+            font-weight: 600;
+            line-height: 1.2;
+            font-size: 15px;
+        }
+    }
+}
+
 .heroBanner__container--bg {
     position: absolute;
     content: '';
@@ -32,7 +53,7 @@
 .mobile-banner {
     position: absolute;
     content: '';
-    left: 0;
+    right: 0;
     height: 100%;
     @media only screen and (min-width: 768px) {
         display: none;
