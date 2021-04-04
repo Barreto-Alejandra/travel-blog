@@ -6,9 +6,6 @@
             .heading {
                 margin: 0;
                 text-align: center;
-                font-size: 35px;
-                font-weight: 500;
-                color: $heading-color;
             }
             & .text {
                 margin: 0 auto;
@@ -87,9 +84,9 @@
 
 .textBlock__figure--topGif {
     position: absolute;
-    max-width: 85px;
-    right: 65px;
-    top: 25px;
+    max-width: 110px;
+    right: 10px;
+    top: 0px;
     transform: rotate(20deg);
     & img {
         width: 100%;
@@ -108,9 +105,9 @@
 
 .textBlock__figure--bottomGif {
     position: absolute;
-    max-width: 80px;
-    left: 88px;
-    bottom: -26px;
+    max-width: 110px;
+    left: 30px;
+    bottom: -50px;
     transform: rotate(-135deg);
     & img {
         width: 100%;
