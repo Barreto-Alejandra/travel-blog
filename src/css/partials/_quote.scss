@@ -7,15 +7,9 @@
     position: relative;
     height: 250px;
     width: 100%;
-    // background-image: url(../asset/wallpaper.png);
     background-color: #40757e;
     background-size: cover;
 
-    // perspective: 1000px;
-    // perspective-origin: 50% 50%;
-    // animation: animation 100s linear infinite;
-
-    //mobile animation
     box-shadow: 0 0 2px #FCF1EA, 0 0 5px #FCF1EA, 0 0 10px #40757e, 0 0 15px #40757e,
     0 0 20px #40757e, 0 0 25px #40757e;
   -webkit-animation: blink 2s infinite alternate;
@@ -25,24 +19,14 @@
     }
 }
 
+
 @keyframes blink {
     100% {
       box-shadow: 0 0 3px #FCF1EA, 0 0 10px #FCF1EA, 0 0 20px #FCF1EA, 0 0 40px #40757e,
         0 0 70px #40757e, 0 0 80px #40757e;
     }
-  }
+}
   
-
-
-
-
-
-// @keyframes animation {
-//     100%{
-//      background-position:0px -2000px;
-//    }
-// }
-
 
 .quote__container--text {
     position: absolute;
@@ -64,6 +48,23 @@
         text-align: center;
         color: $white-2;
         font-weight: 400;
+        margin-bottom: 0;
+    }
+    @media only screen and (min-width: 768px) {
+        max-width: 490px;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        & p,
+        & h4 {
+            max-width: 85%;
+            margin: 0 auto 15px;
+        }
+        & p {
+            line-height: 1.5;
+            font-size: 20px;
+        }
     }
     @media only screen and (min-width: 1200px) {
         max-width: 500px;
@@ -77,6 +78,7 @@
             margin: 0 auto;
             font-size: 23px;
         }
+
         & h4 {
             padding-top: 2rem;
             font-size: 16px;
