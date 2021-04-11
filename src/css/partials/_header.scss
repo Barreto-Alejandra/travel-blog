@@ -4,6 +4,19 @@
   z-index: 99;
 }
 
+//active header
+.menu-active {
+  overflow: hidden;
+  & .header {
+    height: 100%;
+    background: rgba(250, 228, 215, 0.9);
+    .container,
+    .row {
+      height: 100%;
+    }
+  }
+}
+
 .navbar {
   font-family: sans-serif;
   display: flex;
