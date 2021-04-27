@@ -1,0 +1,52 @@
+.sliderBlock {
+    min-height: 300px;
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.sliderBlock__figure {
+    // max-width: 300px;
+    height: 300px;
+    width: 100%;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    @media only screen and (min-width: 992px) {
+        height: 450px;
+    }
+}
+
+
+//swiper btns
+.sliderBlock {
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $heading-color;
+        &::after {
+            font-size: 30px;
+        }
+    }
+}

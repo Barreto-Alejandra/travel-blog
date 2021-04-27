@@ -67,10 +67,11 @@ class Slider {
     if( this.sliderGallery) {
       let swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
         loop: true,
-        autoplay: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         speed: 3000,
         navigation: {
           nextEl: '.swiper-button-next',
