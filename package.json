@@ -33,7 +33,7 @@
     "scrollmagic-plugin-gsap": "^1.0.4",
     "slick-carousel": "^1.8.1",
     "smooth-scroll": "^16.1.2",
-    "swiper": "^5.3.6",
+    "swiper": "^5.4.5",
     "three": "^0.126.1",
     "three-orbitcontrols-ts": "^0.1.2",
     "webpack": "^4.41.6",
