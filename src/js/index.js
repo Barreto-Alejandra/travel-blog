@@ -9,6 +9,7 @@ import './polyfills/polyfill';
 import 'bootstrap/dist/css/bootstrap-grid.css';
 /////// MAIN CSS
 import '../css/style.sass';
+import 'swiper/css/swiper.css';
 
 
 //////////////////////////
@@ -16,9 +17,8 @@ import '../css/style.sass';
 //////////////////////////
 
   // import Swiper JS
-  import Swiper from 'swiper';
-  // import Swiper styles
-  import 'swiper/swiper-bundle.css';
+import Swiper from 'swiper';
+
 
 
 
@@ -57,12 +57,38 @@ class Parallax {
   }
 }
 
+
+class Slider {
+  constructor() {
+    this.sliderGallery = document.querySelectorAll('.js-slider');
+    this.start();
+  }
+  start() {
+    if( this.sliderGallery) {
+      let swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        autoplay: true,
+        speed: 3000,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
+  }
+}
+
+
 ////////////////////
 // Run apps
 ////////////////////
 document.addEventListener('DOMContentLoaded', function () {
   var togglerHeader = new Header;
   var parallax = new Parallax;
+  var slider = new Slider;
 });
 
 
