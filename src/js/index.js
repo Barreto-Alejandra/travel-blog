@@ -68,11 +68,12 @@ class Slider {
       let swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         loop: true,
+        effect: 'fade',
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
         },
-        speed: 3000,
+        speed: 1000,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
