@@ -12,21 +12,22 @@ import '../css/style.sass';
 import 'swiper/css/swiper.css';
 
 
-//////////////////////////
-// IMPORT LIBRARIES JS
-//////////////////////////
+
+/*IMPORT LIBRARIES JS*/
+
 
   // import Swiper JS
 import Swiper from 'swiper';
 
+import $ from "jquery";
+
+// ES6 import
+import simpleParallax from 'simple-parallax-js';
 
 
 
 
-
-//////////////////////////
-// CLASS BLOCKS
-//////////////////////////
+/*CLASS BLOCKS*/
 
 class Header {
   constructor() {
@@ -49,11 +50,15 @@ class Header {
 
 class Parallax {
   constructor () {
-    this.parallaxEffect = document.querySelector('#js-parallax');
+    this.parallaxEffect = document.querySelectorAll('#js-parallax');
     this.start();
   }
   start() {
-    
+    if(this.parallaxEffect) {
+      new simpleParallax(this.parallaxEffect, {
+        scale: 1.5
+      });
+    }
   }
 }
 
@@ -83,14 +88,39 @@ class Slider {
   }
 }
 
+class Scrolling {
+  constructor() {
+    this.scrollBlock = document.querySelector('.js-scroll a')
+    this.start();
+  }
+  start() {
+    if(this.scrollBlock) {
+      $(document).ready(function () {
+        $('.js-scroll a').on('click', function (e) {
+          var target = this.hash,
+              $target = $(target);
+          
+          $('html, body').stop().animate({
+            'scrollTop':$target.offset().top-10
 
-////////////////////
-// Run apps
-////////////////////
+          }, 900, 'swing', function () {
+
+          });
+        });
+      })
+    }
+  }
+}
+
+
+
+/*Run apps*/
+
 document.addEventListener('DOMContentLoaded', function () {
   var togglerHeader = new Header;
-  var parallax = new Parallax;
+  // var parallax = new Parallax;
   var slider = new Slider;
+  var scrolling = new Scrolling;
 });
 
 

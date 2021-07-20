@@ -24,16 +24,16 @@
       
               <ul id="primary-menu" class="menu nav-menu">
                 <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Home</a></li>
-                <li class="menu-item">
+                <li class="menu-item js-scroll">
                   <a class="nav__link"  href="#about">Acerca</a>
                 </li>
       
-                <li class="menu-item">
+                <li class="menu-item js-scroll">
                   <a class="nav__link"  href="#blog">Blog</a>
                 </li>
       
-                <li class="menu-item">
-                  <a class="nav__link"  href="#">Contacto</a>
+                <li class="menu-item js-scroll">
+                  <a class="nav__link"  href="#contact">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -49,7 +49,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div id="js-parallax" class="heroBanner__container">
+          <div class="heroBanner__container">
             <div class="heroBanner__container--content">
               <div class="text">
                 <p>
@@ -62,7 +62,7 @@
             <video class="mobile-banner" src="../src/asset/video-bg.mp4" loop muted autoplay></video>
 
 
-            <video class="desktop-banner" src="../src/asset/video-bgg.mp4" loop muted autoplay></video>
+            <video id="js-parallax" class="desktop-banner" src="../src/asset/video-bgg.mp4" loop muted autoplay></video>
            
             <!-- <div class="heroBanner__container--bg" style="background-image: url(../src/asset/hero-3.jpg);"></div> -->
           </div>
@@ -343,14 +343,12 @@
       </div>
     </div>
   </section>
-
-
   <!-- /slider -->
 
 
 
   <!-- contact -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="container">
       <div class="row">
         <div class="col-12">
